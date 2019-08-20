@@ -52,3 +52,6 @@ enable = 'false'
 
 [[layers]]
 name = 'lang#go'
+
+[[layers]]
+name = 'lang#ruby'
