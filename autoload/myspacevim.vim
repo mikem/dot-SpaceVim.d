@@ -1,7 +1,7 @@
 noremap <C-6> <C-^>
 
 func! myspacevim#before() abort
-  let g:indentLine_setConceal = 0
+  "let g:indentLine_setConceal = 0
   let g:spacevim_enable_vimfiler_filetypeicon = 1
 endf
 
