@@ -5,7 +5,14 @@ func! myspacevim#before() abort
   let g:spacevim_enable_vimfiler_filetypeicon = 1
 endf
 
-autocmd Filetype ruby,eruby setlocal foldmethod=syntax
+function! PrepForRuby()
+  setlocal foldmethod=syntax
+endfunction
+
+augroup filetype_ruby
+  autocmd!
+  autocmd Filetype ruby,eruby call PrepForRuby()
+augroup END
 
 " Show "search hit BOTTOM, continuing at TOP" when search wraps
 set shortmess-=s
