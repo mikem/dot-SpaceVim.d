@@ -26,13 +26,16 @@
     # Enable vim compatible mode, avoid changing origin vim key bindings
     bootstrap_before = "myspacevim#before"
 
+    # Checkers (https://spacevim.org/layers/checkers/)
+    enable_neomake = false
+    enable_ale = true
 
 
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
-auto-completion-return-key-behavior = "complete"
-auto-completion-tab-key-behavior = "smart"
+auto_completion_return_key_behavior = "nil"
+auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
 name = 'shell'
@@ -44,7 +47,6 @@ name = 'fzf'
 
 [[layers]]
 name = 'checkers'
-enable = 'false'
 
 [[layers]]
 name = 'lang#go'

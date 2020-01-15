@@ -1,8 +1,12 @@
 noremap <C-6> <C-^>
 
+let $FZF_DEFAULT_COMMAND='rg --files --hidden'
+
 func! myspacevim#before() abort
   "let g:indentLine_setConceal = 0
+  let g:spacevim_enable_vimfiler_welcome = 0
   let g:spacevim_enable_vimfiler_filetypeicon = 1
+  let g:spacevim_windows_leader = ''
 endf
 
 function! PrepForRuby()
