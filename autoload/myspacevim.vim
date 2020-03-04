@@ -18,7 +18,7 @@ augroup filetype_ruby
   autocmd Filetype ruby,eruby call PrepForRuby()
 augroup END
 
-" Show "search hit BOTTOM, continuing at TOP" when search wraps
+" Show wrap indicator (bottom right) when search wraps
 set shortmess-=s
 
 " Start with all folds open
