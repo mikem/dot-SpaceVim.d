@@ -18,9 +18,18 @@ augroup filetype_ruby
   autocmd Filetype ruby,eruby call PrepForRuby()
 augroup END
 
+function! Note(...)
+  let path = strftime("%Y%m%d%H%M")." ".trim(join(a:000)).".md"
+  execute ":e " . fnameescape(path)
+endfunction
+command! -nargs=* Note call Note(<f-args>)
+
 " Show wrap indicator (bottom right) when search wraps
 set shortmess-=s
 
 " Start with all folds open
 " autocmd Filetype ruby,eruby normal zR
 set nofoldenable
+
+" Disable cindent, enabled by default in SpaceVim
+set nocindent
