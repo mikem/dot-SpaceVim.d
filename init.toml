@@ -53,6 +53,7 @@ name = 'lang#go'
 
 [[layers]]
 name = 'lang#ruby'
+enabled_linters = ['rubocop']
 
 [[custom_plugins]]
 repo = "neovim/nvim-lspconfig"
