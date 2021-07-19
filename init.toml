@@ -58,3 +58,6 @@ enabled_linters = ['rubocop']
 [[custom_plugins]]
 repo = "neovim/nvim-lspconfig"
 merged = false
+
+[[layers]]
+name = "lsp_sorbet"
