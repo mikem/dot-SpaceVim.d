@@ -26,11 +26,7 @@
     enable_statusline_mode = false
     # Enable vim compatible mode, avoid changing origin vim key bindings
     bootstrap_before = "myspacevim#before"
-
-    # Checkers (https://spacevim.org/layers/checkers/)
-    enable_neomake = false
-    enable_ale = true
-
+    bootstrap_after = "myspacevim#after"
 
 # Enable autocomplete layer
 [[layers]]
@@ -50,7 +46,14 @@ name = 'fzf'
 name = 'checkers'
 
 [[layers]]
+name = 'lsp'
+
+[[layers]]
 name = 'lang#go'
 
 [[layers]]
 name = 'lang#ruby'
+
+[[custom_plugins]]
+repo = "neovim/nvim-lspconfig"
+merged = false

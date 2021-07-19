@@ -9,6 +9,12 @@ func! myspacevim#before() abort
   let g:spacevim_windows_leader = ''
 endf
 
+func! myspacevim#after() abort
+lua << EOF
+  require'lspconfig'.sorbet.setup{}
+EOF
+endf
+
 function! PrepForRuby()
   setlocal foldmethod=syntax
 endfunction
